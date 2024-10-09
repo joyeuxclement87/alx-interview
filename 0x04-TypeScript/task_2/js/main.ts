@@ -74,12 +74,12 @@ function executeWork(employee: Teacher | Director) {
     }
 }
 
-type Subjects = 'Physics' | 'Geography';
+type Subjects = 'Math' | 'History';
 
 function teachClass(todayClass: Subjects): string {
-    if (todayClass === 'Physics') {
-        return 'Teaching Physics';
+    if (todayClass === 'Math') {
+        return 'Teaching Math';
     } else {
-        return 'Teaching Geography';
+        return 'Teaching History';
     }
 }
