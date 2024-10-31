@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-""" working on UTF-8 Validation """
+"""Working on UTF-8 Validation"""
 
 
 def validUTF8(data):
     """
-    making the method that determines if a given data set represents a valid
+    Method that determines if a given data set represents a valid
     UTF-8 encoding.
     """
     num_byte = 0
@@ -30,11 +30,8 @@ def validUTF8(data):
 
         else:
             if not (a & m_1 and not (a & m_2)):
-                    return False
+                return False
 
         num_byte -= 1
 
-    if num_byte == 0:
-        return True
-
-    return False
+    return num_byte == 0
